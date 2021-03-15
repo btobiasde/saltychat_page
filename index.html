@@ -1,0 +1,123 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://forum.red-v.cc/images/favicon/2.favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Saltychat - RED-V.cc</title>
+</head>
+<body>
+    <style>
+        body {
+            color: #fff;
+            background-color: black;
+            font-family: 'Spartan', sans-serif;
+            background-image: url('https://cdn.discordapp.com/attachments/740765822577934416/802613575163183154/Unbenannt22.png');
+        }
+        .red-center{
+            text-align: center;
+            margin-top: 15%;
+        }
+        .text {
+            margin-left: 1%; padding-right: 1%;
+            line-height: 1.6;
+        }
+        .button {
+            padding: 12px 24px; 
+            border: 2px solid rgb(158 32 51); 
+            border-radius: 6px; 
+            text-decoration: none; 
+            color: rgb(158 32 51); 
+            transition: 0.25s;
+            background-color: inherit;
+            font-weight: bold;
+        }
+        .button:hover{
+            background-color: rgb(158 32 51);
+            color: white;
+            cursor: pointer;
+        }
+        .back-button {
+            padding: 12px 12px; 
+            border: 2px solid rgb(158 32 51); 
+            border-radius: 6px; 
+            text-decoration: none; 
+            color: rgb(158 32 51); 
+            transition: 0.25s;
+            background-color: inherit;
+            font-weight: bold;
+        }
+        .back-button:hover{
+            background-color: rgb(158 32 51);
+            color: white;
+        }
+        .back {
+            text-align: left;
+            margin-top: 25px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+        .link {
+            color: rgb(198 42 61);
+            text-decoration: none;
+            transition: 200ms;
+        }
+        .text-link:hover {
+            opacity: 0.8;
+        }
+        ::-moz-selection { 
+            color:  rgb(255, 255, 255); 
+            background: rgb(198 42 61); 
+            text-shadow: none; 
+        }
+        ::selection { 
+            color:  rgb(255, 255, 255); 
+            background: rgb(198 42 61); 
+            text-shadow: none; 
+        }
+        .noselect {
+          -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+             -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+        }
+    </style>
+    <div class="back">
+        <a href="/" class="back-button"><i class="fas fa-chevron-left"></i> Startseite</a>
+    </div>
+    <div class="red-center">
+        <h1>Saltychat Download</h1>
+        <h3 class="text">
+            Hier kannst du das Teamspeak Sprachplugin für unseren GTA V FiveM Server herunterladen.<br>
+            Drück dafür einfach den Download Button unterhalb des Textes.
+            <br>
+            Sofern Saltychat bei dir nicht funktioniert, findest du <a class="link" href="fix.html">hier</a> einen Fix.
+        </h3>
+        <h5 style="margin-top: 20px;">
+            <b>Disclaimer:</b> Das Voiceplugin wurde von <a class="link" target="_blank" href="https://www.saltmine.de/">Saltmine</a> entwickelt
+        </h5>
+        <div>
+            <br>
+            <a onclick="downloadNow();" id="downloadBtn" class="button noselect">Download <i class="fas fa-download"></i></a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <i class="fas fa-code"></i> with <i style="color: red;" class="fas fa-heart"></i> by <a target="_blank" href="https://b-tobias.de" class="link">Tobias</a>
+    </div>
+
+    <script>
+        function downloadNow() {
+            const button = document.getElementById('downloadBtn');
+            button.innerHTML = 'Download <i class="fas fa-sync-alt fa-spin"></i>';
+            window.location.replace("http://content.red-v.cc/SaltyChat_2.2.0.ts3_plugin");
+        }
+    </script>
+</body>

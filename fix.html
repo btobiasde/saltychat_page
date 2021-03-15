@@ -1,0 +1,113 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://forum.red-v.cc/images/favicon/2.favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Saltychat - RED-V.cc</title>
+</head>
+<body>
+    <style>
+        body {
+            color: #fff;
+            background-color: black;
+            font-family: 'Spartan', sans-serif;
+            background-image: url('https://cdn.discordapp.com/attachments/740765822577934416/802613575163183154/Unbenannt22.png');
+        }
+        .red-center{
+            text-align: center;
+            margin-top: 8%;
+        }
+        .text {
+            margin-left: 1%; padding-right: 1%;
+            line-height: 1.6;
+        }
+        .button {
+            padding: 12px 24px; 
+            border: 2px solid rgb(158 32 51); 
+            border-radius: 6px; 
+            text-decoration: none; 
+            color: rgb(158 32 51); 
+            transition: 0.25s;
+            background-color: inherit;
+            font-weight: bold;
+        }
+        .button:hover{
+            background-color: rgb(158 32 51);
+            color: white;
+            cursor: pointer;
+        }
+        .back-button {
+            padding: 12px 12px; 
+            border: 2px solid rgb(158 32 51); 
+            border-radius: 6px; 
+            text-decoration: none; 
+            color: rgb(158 32 51); 
+            transition: 0.25s;
+            background-color: inherit;
+            font-weight: bold;
+        }
+        .back-button:hover{
+            background-color: rgb(158 32 51);
+            color: white;
+        }
+        .back {
+            text-align: left;
+            margin-top: 25px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+        .link {
+            color: rgb(198 42 61);
+            text-decoration: none;
+            transition: 200ms;
+        }
+        .link:hover {
+            opacity: 0.8;
+        }
+        ::-moz-selection { 
+            color:  rgb(255, 255, 255); 
+            background: rgb(198 42 61); 
+            text-shadow: none; 
+        }
+        ::selection { 
+            color:  rgb(255, 255, 255); 
+            background: rgb(198 42 61); 
+            text-shadow: none; 
+        }
+        .noselect {
+          -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+             -khtml-user-select: none; /* Konqueror HTML */
+               -moz-user-select: none; /* Old versions of Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                    user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Edge, Opera and Firefox */
+        }
+    </style>
+    <div class="back">
+        <a href="javascript:history.back()" class="back-button"><i class="fas fa-chevron-left"></i> Zurück</a>
+    </div>
+    <div class="red-center">
+        <h1>Saltychat Fix</h1>
+        <iframe src="https://streamable.com/e/pxyi3l?autoplay=1" width="560" height="315" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+        <h3 class="text">
+            Da Saltychat sich je nach Internet Provider nicht mit dem Websocket verbinden kann,<br>
+            kann man die Google DNS Server nutzen damit alles korrekt funktioniert.
+            <br>
+            <h4>
+                Folgende DNS Server müssen gesetzt werden:<br>
+                IPv4<br> 8.8.8.8&nbsp;&nbsp;&nbsp;8.8.4.4<br>
+                IPv6<br> 2001:4860:4860::8888&nbsp;&nbsp;&nbsp;2001:4860:4860::8844
+            </h4>
+        </h3>
+    </div>
+
+    <div class="footer">
+        <i class="fas fa-code"></i> with <i style="color: red;" class="fas fa-heart"></i> by <a target="_blank" href="https://b-tobias.de" class="link">Tobias</a>
+    </div>
+</body>
